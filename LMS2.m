@@ -1,4 +1,4 @@
-%% LMS
+%% Algoritmo LMS
 %% Jeison Ivan Roa M. 2018
 close all
 clear all
@@ -7,7 +7,7 @@ tasas = [0.1 0.01 0.001 1];
 acumulado = [];
 for i = 1:4
     alfa = tasas(i); % Tasa de aprendizaje
-%% INICIALIZACION VARIABLES
+%% Inicialización Variables
 x = [ 1, 4, 3, 6; 1, 2, -2, 3;1, 1, 0, -3, ;1, 4, 2, 3];
 y = [-1,1,1,-1];
 p=8; % Criterio de convergencia (Numero de iteraciones)
@@ -17,7 +17,7 @@ error=0;
 errores=[];
 ext=6;
 %% Inicio Algoritmo LMS
-w = [1,0,0,0]; %Inicializaci�n pesos.
+w = [1,0,0,0]; %Inicialización pesos.
 w = w.'; % Traspuesta
 while   pcont<p && ext<=4
     for indice = 1:4
